@@ -84,7 +84,7 @@ pub struct ObjectMeta {
 
     /// Sequence number representing the generation of this resource
     #[serde(default, skip_serializing_if = "Option::is_none")]
-    pub generation: Option<f64>,
+    pub generation: Option<i32>,
 
     /// Name prefix to be be used by kube if name is not provided
     #[serde(default, skip_serializing_if = "Option::is_none")]
